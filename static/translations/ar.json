@@ -5,7 +5,7 @@
         "featured": "Featured",
         "products": "Products",
         "regions": "الساحات الدراسية",
-        "about": "About",
+        "about": "من نحن",
         "welcome": "Welcome to Gawa!",
         "lead": "This is a demo app showcasing how a Vue.js SPA can be built with I18n and l10n. Use the language switcher in the menu to see this site in English, Japanese, and Hebrew. After you select a language, check out the Products page.",
         "trans_disclaimer": "I used Google translate to generate the Japanese and Hebrew. Sorry if either is a total wash!",
