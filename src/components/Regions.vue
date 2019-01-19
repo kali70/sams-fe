@@ -8,9 +8,6 @@
           <li class="region-row" v-for="region in this.regions" :key="region.region_id">
             <localized-link :to="`regions/${region.region_id}`">
               <div>
-                {{ region.region_id }}
-              </div>
-              <div>
                 {{ regionsNames[region.name] }}
               </div>
               <div>
@@ -21,9 +18,6 @@
               </div>
               <div>
                 {{ region.contact_number }}
-              </div>
-              <div>
-                {{ region.active }}
               </div>
             </localized-link>
           </li>
