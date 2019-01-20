@@ -88,14 +88,17 @@ export default {
     .region-row {
       margin: 5px;
       padding: 15px;
+      &:hover {
+        background: #f2f2f2
+      }
       a {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
         &:hover {
           text-decoration: none;
         }
+
         div {
           align-items: center;
           width: 15%;
@@ -104,7 +107,7 @@ export default {
       }
     }
     li:nth-child(odd) {
-      background: #cce5ff;
+      background: #f2f2f2;
     }
     &.tabel-header {
       padding: 10px 27px;
@@ -115,7 +118,7 @@ export default {
         flex-direction: row;
         justify-content: space-between;
         padding: 15px 25px;
-        background: #cce5ff;
+        background: #f2f2f2;
       }
     }
   }

@@ -77,13 +77,16 @@ export default {
 
 <style lang='scss' scoped>
   ul {
-    background: #3399ff;
+    background: #FFFFFF;
     padding: 20px;
     list-style: none;
     .student-row {
-      background: #cce5ff;
+      background: #f2f2f2;
       margin: 5px;
       padding: 15px;
+      &:hover {
+        background: #f2f2f2;
+      }
       a {
         display: flex;
         flex-direction: row;
@@ -109,7 +112,7 @@ export default {
         flex-direction: row;
         justify-content: space-between;
         padding: 15px 52px;
-        background: #cce5ff;
+        background: #f2f2f2;
       }
     }
   }
