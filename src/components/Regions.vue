@@ -16,7 +16,7 @@
           <li class="region-row" v-for="region in this.regions" :key="region.region_id">
             <localized-link :to="`regions/${region.region_id}`">
               <div>
-                {{ regionsNames[region.name] }}
+                {{ region.name }}
               </div>
               <div>
                 {{ region.created_at }}
@@ -41,14 +41,6 @@ import LocalizedLink from './LocalizedLink'
 export default {
   data () {
     return {
-      regionsNames: {
-        'Europ': 'الساحة الاوربية',
-        'Arabia and South Africa': 'العربية و الافريقية',
-        'Aisa and Australia': 'الاسيوية و الاسترالية',
-        'Britain and Ireland': 'البريطانية و الايرلندية',
-        'USA and Canada': 'امريكا الشمالية',
-        'Turkish and Cyprus Greek': 'التركية و القبرصية'
-      }
     }
   },
   components: {
@@ -101,7 +93,7 @@ export default {
 
         div {
           align-items: center;
-          width: 15%;
+          width: 20%;
           color: #000000;
         }
       }
@@ -119,6 +111,11 @@ export default {
         justify-content: space-between;
         padding: 15px 25px;
         background: #f2f2f2;
+        div {
+          align-items: center;
+          width: 20%;
+          color: #000000;
+        }
       }
     }
   }
