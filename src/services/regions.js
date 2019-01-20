@@ -15,3 +15,14 @@ regionsService.getRegions = async () => {
     return data
   })
 }
+
+const regionByID = async (id) => request({
+  url: `${apiUrl}/${regionsSvcUrl}/${id}`,
+  method: 'get'
+})
+regionsService.getRegionByID = async (id) => {
+  return regionByID(id).then(data => {
+    console.log(data)
+    return data
+  })
+}

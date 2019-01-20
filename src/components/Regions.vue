@@ -4,6 +4,14 @@
           <h1>{{$t('our_regions')}}</h1>
       </template>
       <div>
+        <ul class='tabel-header'>
+          <li>
+            <div>Name</div>
+            <div>Created At</div>
+            <div>Updated At</div>
+            <div>Contact Number</div>
+          </li>
+        </ul>
         <ul>
           <li class="region-row" v-for="region in this.regions" :key="region.region_id">
             <localized-link :to="`regions/${region.region_id}`">
@@ -74,11 +82,10 @@ export default {
 
 <style lang='scss' scoped>
   ul {
-    background: #3399ff;
+    background: #ffffff;
     padding: 20px;
     list-style: none;
     .region-row {
-      background: #cce5ff;
       margin: 5px;
       padding: 15px;
       a {
@@ -96,5 +103,21 @@ export default {
         }
       }
     }
+    li:nth-child(odd) {
+      background: #cce5ff;
+    }
+    &.tabel-header {
+      padding: 10px 27px;
+      width: 100%;
+      margin: 0;
+      li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 25px;
+        background: #cce5ff;
+      }
+    }
   }
+
 </style>
