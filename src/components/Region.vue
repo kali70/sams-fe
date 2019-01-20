@@ -4,9 +4,18 @@
           <h1>{{ this.region[0].name }}</h1>
       </template>
       <div>
+        <ul class='tabel-header'>
+          <li>
+            <div>Student Name</div>
+            <div>Martial Status</div>
+            <div>Contact Number</div>
+            <div>Email</div>
+            <div>National ID</div>
+          </li>
+        </ul>
         <ul>
           <li class="student-row" v-for="student in this.region[0].students" :key="student.id">
-            <localized-link :to="`${region_id}/student/${student.id}`">
+            <localized-link :to="`regions/${region_id}/student/${student.id}`">
               <div>
                 {{ student.firs_name }} {{ student.last_name }}
               </div>
@@ -87,7 +96,20 @@ export default {
           align-items: center;
           width: 15%;
           color: #000000;
+          text-align: center;
         }
+      }
+    }
+    &.tabel-header {
+      padding: 10px 27px;
+      width: 100%;
+      margin: 0;
+      li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 52px;
+        background: #cce5ff;
       }
     }
   }

@@ -4,6 +4,7 @@ import ProductIndex from '@/components/ProductIndex'
 import Regions from '@/components/Regions'
 import Region from '@/components/Region'
 import Authorization from '@/components/Authorization'
+import Student from '@/components/Student'
 import { defaultLocale } from '../config/i18n'
 
 Vue.use(Router)
@@ -40,6 +41,12 @@ export const router = new Router({
         {
           path: 'products',
           component: ProductIndex
+        },
+        {
+          path: 'regions/:id/student/:s_id',
+          component: Student,
+          props: true,
+          name: Student
         },
         {
           path: 'regions/:id',
