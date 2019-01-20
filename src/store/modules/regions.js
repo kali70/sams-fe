@@ -1,7 +1,8 @@
 import { regionsService } from '../../services'
 const getDefaultState = () => {
   return {
-    regions: []
+    regions: [],
+    region: []
   }
 }
 const regions = {
@@ -12,8 +13,19 @@ const regions = {
       return regionsService.getRegions()
         .then(
           data => {
-            console.log('regions: ', data)
             commit('saveRegions', data)
+          },
+          error => {
+            console.log('err: ', error)
+          }
+        )
+    },
+    getRegionByID ({ commit }, id) {
+      return regionsService.getRegionByID(id)
+        .then(
+          data => {
+            commit('saveRegion', data)
+            return data
           },
           error => {
             console.log('err: ', error)
@@ -24,6 +36,9 @@ const regions = {
   mutations: {
     saveRegions (state, regions) {
       state.regions = regions.data
+    },
+    saveRegion (state, region) {
+      state.region = region.data
     }
   }
 }
