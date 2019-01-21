@@ -80,6 +80,7 @@ export default {
     .region-row {
       margin: 5px;
       padding: 15px;
+      text-align: center;
       &:hover {
         background: #f2f2f2
       }
@@ -95,6 +96,9 @@ export default {
           align-items: center;
           width: 20%;
           color: #000000;
+          &:first-child {
+            text-align: right;
+          }
         }
       }
     }
@@ -111,6 +115,7 @@ export default {
         justify-content: space-between;
         padding: 15px 25px;
         background: #f2f2f2;
+        text-align: center;
         div {
           align-items: center;
           width: 20%;
