@@ -100,6 +100,9 @@ export default {
           width: 15%;
           color: #000000;
           text-align: center;
+          &:first-child {
+            text-align: right;
+          }
         }
       }
     }
