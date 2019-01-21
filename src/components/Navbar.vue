@@ -4,7 +4,7 @@
       <img
         width="36"
         height="36"
-        src="../assets/logo.png"
+        src="../assets/Libya_EM_Logo.jpeg"
         class="d-inline-block align-top mr-2"
       />
 
