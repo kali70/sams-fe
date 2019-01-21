@@ -75,7 +75,7 @@ export default {
 <style lang='scss' scoped>
   ul {
     background: #ffffff;
-    padding: 20px;
+    padding: 20px 0;
     list-style: none;
     .region-row {
       margin: 5px;
@@ -102,7 +102,7 @@ export default {
       background: #f2f2f2;
     }
     &.tabel-header {
-      padding: 10px 27px;
+      padding: 10px 0;
       width: 100%;
       margin: 0;
       li {
