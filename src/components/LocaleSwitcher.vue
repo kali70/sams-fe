@@ -33,8 +33,6 @@
 
 <script>
 import enIcon from 'svg-country-flags/svg/gb.svg'
-import heIcon from 'svg-country-flags/svg/il.svg'
-import jaIcon from 'svg-country-flags/svg/jp.svg'
 import arIcon from 'svg-country-flags/svg/ly.svg'
 
 import { locales } from '../config/i18n'
@@ -44,8 +42,6 @@ export default {
     return {
       icons: {
         en: enIcon,
-        he: heIcon,
-        ja: jaIcon,
         ar: arIcon
       },
       locales

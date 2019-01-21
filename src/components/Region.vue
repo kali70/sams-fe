@@ -78,7 +78,7 @@ export default {
 <style lang='scss' scoped>
   ul {
     background: #FFFFFF;
-    padding: 20px;
+    padding: 20px 0;
     list-style: none;
     .student-row {
       background: #f2f2f2;
@@ -103,8 +103,11 @@ export default {
         }
       }
     }
+    .student-row:nth-child(even) {
+      background: #ffffff;
+    }
     &.tabel-header {
-      padding: 10px 27px;
+      padding: 10px 0px;
       width: 100%;
       margin: 0;
       li {
