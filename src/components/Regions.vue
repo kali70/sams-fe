@@ -6,10 +6,10 @@
       <div>
         <ul class='tabel-header'>
           <li>
-            <div>Name</div>
-            <div>Created At</div>
-            <div>Updated At</div>
-            <div>Contact Number</div>
+            <div>اسم الساحة</div>
+            <div>تاريخ الفتح</div>
+            <div>اخر تحديث</div>
+            <div>رقم الهاتف</div>
           </li>
         </ul>
         <ul>

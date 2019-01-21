@@ -6,11 +6,11 @@
       <div>
         <ul class='tabel-header'>
           <li>
-            <div>Student Name</div>
-            <div>Martial Status</div>
-            <div>Contact Number</div>
-            <div>Email</div>
-            <div>National ID</div>
+            <div>اسم الطالب</div>
+            <div>الحالة الاجتماعية</div>
+            <div>رقم الهاتف</div>
+            <div>بريد الكتروني</div>
+            <div>الرقم الوطني</div>
           </li>
         </ul>
         <ul>
